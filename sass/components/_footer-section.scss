@@ -1,0 +1,96 @@
+
+.container-footer {
+    min-width: var(--project-width);
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-style: normal;
+    background: var(--third-background);
+  }
+  
+  .footer-section {
+    max-width: var(--project-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+  }
+  
+  .fotter-address {
+    margin-right: 70px;
+  }
+  
+  .footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--item-color);
+  }
+  
+  .footer-logo:hover,
+  .footer-logo:focus {
+    color: var(--link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic-bezier);
+  }
+  
+  .footer-logo:hover .footer-logo--accent,
+  .footer-logo:focus .footer-logo--accent {
+    color: var(--link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic-bezier);
+  }
+  
+  .footer-logo--accent {
+    color: #ffffff;
+  }
+  
+  .footer-logo--accent:hover,
+  .footer-logo--accent:focus {
+    color: var(--link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic-bezier);
+  }
+  
+  .footer-data {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 9px;
+  }
+  
+  .footer-data:hover,
+  .footer-data:focus {
+    color: var(--link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic-bezier);
+  }
+  
+  .footer-data {
+    color: white;
+  }
+  
+  a.footer-contact {
+    color: white;
+  }
+  
+  .footer-contact:hover,
+  .footer-contact:focus {
+    color: rgba(255, 255, 255, 0.6);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic-bezier);
+  }
+  
+  .footer-list {
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  
