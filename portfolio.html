@@ -14,232 +14,357 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
     <link href="./css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
   </head>
 
   <body>
-    <header class="header-container border">
-      <div class="header-content">
-      <nav>
-        <ul class="list header-content-list">
+    <header class="page-header__border">
+      <div class="page-header__content">
+        <nav>
+          <ul class="site-nav">
+            <li>
+              <a class="logo" href="./index.html"
+                >Web<span class="logo__accent">studio</span></a
+              >
+            </li>
+            <li>
+              <a class="site-nav__secondary" href="./index.html">Agencja</a>
+            </li>
+            <li>
+              <a class="site-nav__primary" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="site-nav__secondary" href="/Kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="link site-nav">
           <li>
-            <a class="menu-item-one" href="./index.html"
-              >Web<span class="menu-color">studio</span></a
+            <a class="site-nav__contact" href="mailto:info@devstudio.com"
+              ><div class="site-nav__icon">
+                <svg width="16" height="12">
+                  <use
+                    class="site-nav__icon-accent"
+                    href="./images/icons.svg#icon-envelope"
+                  ></use>
+                </svg>
+              </div>
+              info@devastudio.com
+            </a>
+          </li>
+          <li>
+            <a class="site-nav__contact" href="tel:+48111111111"
+              ><div class="site-nav__icon">
+                <svg width="10" height="16">
+                  <use
+                    class="site-nav__icon-accent"
+                    href="./images/icons.svg#icon-smartphone"
+                  ></use>
+                </svg>
+              </div>
+              +48 111 111 111</a
             >
           </li>
-          <li>
-            <a class="menu-item-twenty-two" href="./index.html">Agencja</a>
-          </li>
-          <li>
-            <a class="menu-item-thirty-three" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li><a class="menu-item-four" href="/Kontakt">Kontakt</a></li>
         </ul>
-      </nav>
-      <ul class="link header-content-list">
-        <li class="contact">
-           <a  class="menu-item-five" href="mailto:info@devstudio.com"  
-             ><div class="contact-icon-envelope"><svg class="contact-icon" width="16" height="12">
-               <use class="icon" href="./images/icons.svg#icon-envelope"></use>
-             </svg></div> info@devastudio.com </a
-           >
-         </li>
-         <li class="contact">
-           <a class="menu-item-six" href="tel:+48111111111"><div class="contact-icon-phone"><svg class="contact-icon" width="10" height="16">
-             <use class="icon" href="./images/icons.svg#icon-smartphone"></use>
-           </svg> </div> +48 111 111 111</a>
-         </li>
-       </ul>
       </div>
     </header>
 
     <main class="container">
-  
       <ul class="buttons">
-        <li><button type="button" class="btn-hover second-nav-bar">Wszystkie</button></li>
-        <li><button type="button" class="btn-hover second-nav-bar">Strony</button></li>
-        <li><button type="button" class="btn-hover second-nav-bar">Aplikacje</button></li>
-        <li><button type="button" class="btn-hover second-nav-bar">Dizajn</button></li>
-        <li><button type="button" class="btn-hover second-nav-bar">Marketing</button></li>
+        <li>
+          <button type="button" class="btn-hover second-nav-bar">
+            Wszystkie
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-hover second-nav-bar">Strony</button>
+        </li>
+        <li>
+          <button type="button" class="btn-hover second-nav-bar">
+            Aplikacje
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-hover second-nav-bar">Dizajn</button>
+        </li>
+        <li>
+          <button type="button" class="btn-hover second-nav-bar">
+            Marketing
+          </button>
+        </li>
       </ul>
-    
 
       <ul class="picture-portfolio">
         <li class="picture-portfolio-hover">
           <div class="picture-portfolio-box">
-           <img 
-            src="./images/portfolio_img/technocrack.jpg"
-            alt="laptop"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+            <img
+              src="./images/portfolio_img/technocrack.jpg"
+              alt="laptop"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Technocrack</h3> <p class="picture-portfolio-description">Strona internetowa</p>
+          </div>
+          <h3 class="picture-portfolio-title">Technocrack</h3>
+          <p class="picture-portfolio-description">Strona internetowa</p>
         </li>
 
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img
-            src="./images/portfolio_img/graphic_new_orlean.jpg"
-            alt="nba"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/graphic_new_orlean.jpg"
+              alt="nba"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Grafika New Orlean vs Golden Star</h3> <p class="picture-portfolio-description">Dizajn</p>
+          </div>
+          <h3 class="picture-portfolio-title">
+            Grafika New Orlean vs Golden Star
+          </h3>
+          <p class="picture-portfolio-description">Dizajn</p>
         </li>
 
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/restaurant_seafood.jpg"
-            alt="restaurant's logo"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/restaurant_seafood.jpg"
+              alt="restaurant's logo"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Restauracja Seafood</h3> <p class="picture-portfolio-description">Aplikacja</p>
+          </div>
+          <h3 class="picture-portfolio-title">Restauracja Seafood</h3>
+          <p class="picture-portfolio-description">Aplikacja</p>
         </li>
 
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/project_prime.jpg"
-            alt="headphones"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/project_prime.jpg"
+              alt="headphones"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Projekt Prime</h3> <p class="picture-portfolio-description">Marketing</p>
+          </div>
+          <h3 class="picture-portfolio-title">Projekt Prime</h3>
+          <p class="picture-portfolio-description">Marketing</p>
         </li>
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/project_boxes.jpg"
-            alt="boxes"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/project_boxes.jpg"
+              alt="boxes"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Projekt Boxes</h3> <p class="picture-portfolio-description">Aplikacja</p>
+          </div>
+          <h3 class="picture-portfolio-title">Projekt Boxes</h3>
+          <p class="picture-portfolio-description">Aplikacja</p>
         </li>
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/inspirations_has_no_borders.jpg"
-            alt="monitor"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/inspirations_has_no_borders.jpg"
+              alt="monitor"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Inspiration has no Borders</h3> <p class="picture-portfolio-description">Strona internetowa</p>
+          </div>
+          <h3 class="picture-portfolio-title">Inspiration has no Borders</h3>
+          <p class="picture-portfolio-description">Strona internetowa</p>
         </li>
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/magazine_limited_edition.jpg"
-            alt="magazine"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/magazine_limited_edition.jpg"
+              alt="magazine"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Magazyn Limited Edition</h3> <p class="picture-portfolio-description">Dizajn</p>
+          </div>
+          <h3 class="picture-portfolio-title">Magazyn Limited Edition</h3>
+          <p class="picture-portfolio-description">Dizajn</p>
         </li>
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/project_lab.jpg"
-            alt="label"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/project_lab.jpg"
+              alt="label"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Projekt LAB</h3> <p class="picture-portfolio-description">Marketing</p>
+          </div>
+          <h3 class="picture-portfolio-title">Projekt LAB</h3>
+          <p class="picture-portfolio-description">Marketing</p>
         </li>
-        <li class="picture-portfolio-hover"><div class="picture-portfolio-box">
-          <img 
-            src="./images/portfolio_img/growing_business.jpg"
-            alt="hands on a laptop"
-            width="370"
-            height="294"
-          />
-          <div class="picture-portfolio-overlay"> 
-            <p class="picture-portfolio-overlay-text">Technotrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p></div>
+        <li class="picture-portfolio-hover">
+          <div class="picture-portfolio-box">
+            <img
+              src="./images/portfolio_img/growing_business.jpg"
+              alt="hands on a laptop"
+              width="370"
+              height="294"
+            />
+            <div class="picture-portfolio-overlay">
+              <p class="picture-portfolio-overlay-text">
+                Technotrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
             </div>
-          <h3 class="picture-portfolio-title">Growing Business</h3> <p class="picture-portfolio-description">Aplikacja</p>
+          </div>
+          <h3 class="picture-portfolio-title">Growing Business</h3>
+          <p class="picture-portfolio-description">Aplikacja</p>
         </li>
       </ul>
-  
     </main>
 
     <footer>
       <address class="container-footer">
         <div class="footer-section">
-        <div class="footer-address">
-          <a class="footer-name" href="./index.html"
-            >Web<span class="footer-menu-color">studio</span></a
-          >
-          <ul class="footer-list">
-        <li class="footer-data">m. Warszawa, Aleje Jerozolimskie 21</li>
-        <li class="footer-data"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
-        <li class="footer-data"><a class="footer-contact" href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
-    </div>
-    <div class="footer-second-section">
-      <p class="footer-second-section-title">dołącz do nas</p>
-      <ul class="section-social-link-footer">
-        <li>
-      <a class="social-link-footer" href="#">
-        <svg class="social-icon-footer"><use href="./images/icons.svg#icon-instagram-2"></use></svg>
-      </a>
-    </li>
-      <li>
-      <a class="social-link-footer" href="#">
-        <svg class="social-icon-footer"><use href="./images/icons.svg#icon-twitter-1"></use></svg>
-      </a>
-    </li>
-      <li>
-      <a class="social-link-footer" href="#">
-        <svg class="social-icon-footer"><use href="./images/icons.svg#icon-facebook-1"></use></svg>
-      </a>
-    </li>
-      <li>
-      <a class="social-link-footer" href="#">
-        <svg class="social-icon-footer"><use href="./images/icons.svg#icon-linkedin-1"></use></svg>
-      </a>
-    </li>
- </ul>
-    </div>
+          <div class="footer-address">
+            <a class="footer-logo" href="./index.html"
+              >Web<span class="footer-logo--accent">studio</span></a
+            >
+            <ul class="footer-list">
+              <li class="footer-data">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer-data">
+                <a class="footer-contact" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-data">
+                <a class="footer-contact" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-second-section">
+            <p class="footer-second-section-title">dołącz do nas</p>
+            <ul class="section-social-link-footer">
+              <li>
+                <a class="social-link-footer" href="#">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link-footer" href="#">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link-footer" href="#">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link-footer" href="#">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-    <div class="footer-form">
-
-      <fieldset class="fieldset-footer">
-        <label class="fieldset-footer-label" for="newsletter">
-          <span class="fieldset-footer-label">Zapisz się do newslettera</span>
-        <input class="fieldset-footer-input" type="email" id="newsletter" placeholder="Email"/>
-    
-        </label>
-      </fieldset>
- <button class="fieldset-footer-button" type="button"><span class="fieldset-footer-button-push">Zapisz się</span><svg class="fieldset-footer-icon"><use href="./images/icons.svg#icon-icon-send"> </use></svg></button> 
-    </div>
-
-    </div>
+          <div class="footer-form">
+            <fieldset class="fieldset-footer">
+              <label class="fieldset-footer-label" for="newsletter">
+                <span class="fieldset-footer-label"
+                  >Zapisz się do newslettera</span
+                >
+                <input
+                  class="fieldset-footer-input"
+                  type="email"
+                  id="newsletter"
+                  placeholder="Email"
+                />
+              </label>
+            </fieldset>
+            <button class="fieldset-footer-button" type="button">
+              <span class="fieldset-footer-button-push">Zapisz się</span
+              ><svg class="fieldset-footer-icon">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </address>
     </footer>
   </body>
 </html>
-
