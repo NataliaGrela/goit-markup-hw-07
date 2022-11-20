@@ -14,20 +14,20 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--item-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 58px;
+      height: 4px;
+      bottom: 32px;
+      top: 78px;
+      background: #2196f3;
+      border-radius: 2px;
+      display: block;
+    }   
   }
-  
-  .site-nav__primary::after {
-    content: '';
-    position: absolute;
-    width: 58px;
-    height: 4px;
-    bottom: 32px;
-    top: 78px;
-    background: #2196f3;
-    border-radius: 2px;
-    display: block;
-  }
-  
+
   .site-nav__secondary {
     font-weight: 500;
     font-size: 14px;
@@ -37,13 +37,13 @@
     margin-top: 24px;
     margin-bottom: 25px;
     margin-right: 46px;
-  }
-  
-  .site-nav__secondary:hover,
-  .site-nav__secondary:focus {
-    color: var(--item-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      color: var(--item-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
   .site-nav__contact {
@@ -59,13 +59,13 @@
     display: flex;
     justify-items: center;
     align-items: center;
-  }
-  
-  .site-nav__contact:hover,
-  .site-nav__contact:focus {
-    color: var(--item-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      color: var(--item-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
   .site-nav__icon {
@@ -75,11 +75,13 @@
     margin-right: 10px;
     justify-content: center;
     align-items: center;
+
+    &:hover .site-nav__icon-accent,
+    &:focus .site-nav__icon-accent {
+      fill: var(--item-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
-  .site-nav__contact:hover .site-nav__icon-accent,
-  .site-nav__contact:focus .site-nav__icon-accent {
-    fill: var(--item-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
+ 

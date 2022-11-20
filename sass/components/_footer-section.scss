@@ -29,33 +29,33 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--item-color);
-  }
-  
-  .footer-logo:hover,
-  .footer-logo:focus {
+
+  &:hover,
+  &:focus {
     color: var(--link-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--cubic-bezier);
   }
   
-  .footer-logo:hover .footer-logo--accent,
-  .footer-logo:focus .footer-logo--accent {
+  &:hover .footer-logo-accent,
+  &:focus .footer-logo-accent {
     color: var(--link-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--cubic-bezier);
   }
-  
-  .footer-logo--accent {
+  }
+
+  .footer-logo-accent {
     color: #ffffff;
-  }
-  
-  .footer-logo--accent:hover,
-  .footer-logo--accent:focus {
+ 
+  &:hover,
+  &:focus {
     color: var(--link-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--cubic-bezier);
   }
-  
+  }
+
   .footer-data {
     font-family: 'Roboto';
     font-style: normal;
@@ -65,19 +65,15 @@
     color: #ffffff;
     cursor: pointer;
     margin-bottom: 9px;
+
+    &:hover,
+    &:focus {
+      color: var(--link-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
-  
-  .footer-data:hover,
-  .footer-data:focus {
-    color: var(--link-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
-  
-  .footer-data {
-    color: white;
-  }
-  
+    
   a.footer-contact {
     color: white;
   }

@@ -32,15 +32,15 @@
     outline: none;
     margin-right: 12px;
     padding-left: 16px;
-  }
-  
-  .subscribe-input:focus {
+
+      
+  &:focus {
     border-color: var(--item-color);
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--cubic-bezier);
   }
   
-  .subscribe-input::placeholder {
+  &::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -51,7 +51,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  
+  }
+
   .subscribe-button {
     background: var(--item-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -67,6 +68,13 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    &:hover,
+    &:focus {
+      background: #7cbef4;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
   .subscribe-button-push {
@@ -85,10 +93,5 @@
     right: 40px;
   }
   
-  .subscribe-button:hover,
-  .subscribe-button:focus {
-    background: #7cbef4;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
+
   

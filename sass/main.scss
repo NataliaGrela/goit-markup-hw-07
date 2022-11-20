@@ -1,11 +1,12 @@
 @import "./utils/vars";
 @import "./utils/common";
+@import "./utils/title";
+
 @import "./components/_page-header";
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/wrapper-background";
 @import "./components/container";
-@import "./utils/title";
 @import "./components/_block-photo";
 @import "./components/team";
 @import "./components/social-link.scss";

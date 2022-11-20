@@ -33,12 +33,14 @@
     width: 200px;
     height: 50px;
     margin-top: 30px;
+
+    &:hover,
+    &:focus {
+      background: #7cbef4;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
-  .btn:hover,
-  .btn:focus {
-    background: #7cbef4;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
+
   

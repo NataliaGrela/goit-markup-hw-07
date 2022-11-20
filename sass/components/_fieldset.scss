@@ -10,6 +10,18 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 28px;
+
+    &:has(.fieldset-size:focus) {
+      border-color: var(--item-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
+    
+    &:has(.fieldset-size:focus) .fieldset-icon {
+      fill: var(--item-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
   .fieldset-label {
@@ -43,18 +55,6 @@
     display: block;
   }
   
-  .fieldset:has(.fieldset-size:focus) {
-    border-color: var(--item-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
-  
-  .fieldset:has(.fieldset-size:focus) .fieldset-icon {
-    fill: var(--item-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
-  
   .fieldset-comment {
     display: flex;
     position: relative;
@@ -67,12 +67,12 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 20px;
-  }
-  
-  .fieldset-comment:has(.fieldset-comment-size:focus) {
-    border-color: var(--item-color);
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
+
+    &:has(.fieldset-comment-size:focus) {
+      border-color: var(--item-color);
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
   .fieldset-comment-size {

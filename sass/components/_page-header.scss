@@ -1,12 +1,12 @@
-.page-header__border {
-  border-bottom: 1px solid #ececec;
-  min-width: var(--project-width);
-}
-
 .page-header__content {
   width: var(--project-width);
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.page-header__border {
+  border-bottom: 1px solid #ececec;
+  min-width: var(--project-width);
 }

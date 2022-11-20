@@ -10,8 +10,14 @@
     position: relative;
     cursor: pointer;
     margin-right: 8px;
+
+    & .checkbox-icon {
+      fill: white;
+      background-color: transparent;
+    }
+
   }
-  
+
   .checkbox-icon {
     width: 13px;
     height: 13px;
@@ -20,11 +26,6 @@
     right: -0.1px;
     bottom: 3.5px;
     border-radius: 2px;
-  }
-  
-  .checkbox .checkbox-icon {
-    fill: white;
-    background-color: transparent;
   }
   
   input:checked + .checkbox .checkbox-icon {
@@ -62,6 +63,13 @@
     cursor: pointer;
     margin-top: 30px;
     border: none;
+
+    &:hover,
+    &:focus {
+      background: #7cbef4;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--cubic-bezier);
+    }
   }
   
   .submit-button-push {
@@ -71,11 +79,6 @@
     color: white;
   }
   
-  .submit-button:hover,
-  .submit-button:focus {
-    background: #7cbef4;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--cubic-bezier);
-  }
+
   
   
