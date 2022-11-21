@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
     <link href="./css/main.min.css" rel="stylesheet" />
-    <link href="./css/styles.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
@@ -25,7 +25,7 @@
 
   <body>
     <header class="page-header__border">
-      <div class="page-header__content">
+      <div class="page-header">
         <nav>
           <ul class="site-nav">
             <li>
@@ -198,7 +198,7 @@
                   <b>John Doe</b>
                 </div>
                 <div class="team__occupation"><p>Product Desiner</p></div>
-                <ul class="social-link__list">
+                <ul class="social-link">
                   <li>
                     <a class="social-link__box" href="#">
                       <svg class="social-link__icon">
@@ -246,7 +246,7 @@
                     <b>John Doe</b>
                   </div>
                   <div class="team__occupation"><p>Frontend Developer</p></div>
-                  <ul class="social-link__list">
+                  <ul class="social-link">
                     <li>
                       <a class="social-link__box" href="#">
                         <svg class="social-link__icon">
@@ -295,7 +295,7 @@
                     <b>John Doe</b>
                   </div>
                   <div class="team__occupation"><p>Marketing</p></div>
-                  <ul class="social-link__list">
+                  <ul class="social-link">
                     <li>
                       <a class="social-link__box" href="#">
                         <svg class="social-link__icon">
@@ -344,7 +344,7 @@
                     <b>John Doe</b>
                   </div>
                   <div class="team__occupation"><p>UI Designer</p></div>
-                  <ul class="social-link__list">
+                  <ul class="social-link">
                     <li>
                       <a class="social-link__box" href="#">
                         <svg class="social-link__icon">
@@ -432,22 +432,22 @@
 
     <footer>
       <address class="footer">
-        <div class="footer-section">
-          <div class="footer-address">
+        <div class="footer__section">
+          <div>
             <div class="footer-hover">
-              <a class="footer-logo" href="./index.html"
-                >Web<span class="footer-logo-accent">studio</span></a
+              <a class="footer__logo" href="./index.html"
+                >Web<span class="footer__logo--accent">studio</span></a
               >
             </div>
-            <ul class="footer-list">
-              <li class="footer-data">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="footer-data">
-                <a class="footer-contact" href="mailto:info@example.com"
+            <ul class="footer__list">
+              <li class="footer__data">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__data">
+                <a class="footer__contact" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-data">
-                <a class="footer-contact" href="tel:+48111111111"
+              <li class="footer__data">
+                <a class="footer__contact" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
@@ -455,32 +455,32 @@
           </div>
 
           <div class="social">
-            <p class="social-title">dołącz do nas</p>
-            <ul class="social-list-footer">
+            <p class="social__title">dołącz do nas</p>
+            <ul class="social__list--footer">
               <li>
-                <a class="social-link-footer" href="#">
-                  <svg class="social-icon-footer">
+                <a class="social__link--footer" href="#">
+                  <svg class="social__icon--footer">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-link-footer" href="#">
-                  <svg class="social-icon-footer">
+                <a class="social__link--footer" href="#">
+                  <svg class="social__icon--footer">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-link-footer" href="#">
-                  <svg class="social-icon-footer">
+                <a class="social__link--footer" href="#">
+                  <svg class="social__icon--footer">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-link-footer" href="#">
-                  <svg class="social-icon-footer">
+                <a class="social__link--footer" href="#">
+                  <svg class="social__icon--footer">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -489,20 +489,20 @@
           </div>
 
           <div class="subscribe">
-            <fieldset class="subscribe-border">
+            <fieldset class="subscribe__border">
               <label for="fieldset-newsletter">
-                <span class="subscribe-label">Zapisz się do newslettera</span>
+                <span class="subscribe__label">Zapisz się do newslettera</span>
                 <input
-                  class="subscribe-input"
+                  class="subscribe__input"
                   type="email"
                   id="fieldset-newsletter"
                   placeholder="Email"
                 />
               </label>
             </fieldset>
-            <button class="subscribe-button" type="button">
-              <span class="subscribe-button-push">Zapisz się</span
-              ><svg class="subscribe-icon">
+            <button class="subscribe__button" type="button">
+              <span class="subscribe__button--push">Zapisz się</span
+              ><svg class="subscribe__icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -514,54 +514,54 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form name="modal-box" class="modal-form">
-          <p class="modal-box-title">
+          <p class="modal__box-title">
             <b>Zostaw swoje dane w formularzu poniżej</b>
           </p>
 
           <fieldset class="fieldset">
-            <label class="fieldset-label" for="fieldset-name">Imię</label>
-            <svg class="fieldset-icon">
+            <label class="fieldset__label" for="fieldset-name">Imię</label>
+            <svg class="fieldset__icon">
               <use href="./images/icons.svg#icon-name-icon"></use>
             </svg>
             <input
-              class="fieldset-size"
+              class="fieldset__size"
               name="modal-box-name"
               id="fieldset-name"
             />
           </fieldset>
 
           <fieldset class="fieldset">
-            <label class="fieldset-label" for="fieldset-phone">Telefon</label>
-            <svg class="fieldset-icon">
+            <label class="fieldset__label" for="fieldset-phone">Telefon</label>
+            <svg class="fieldset__icon">
               <use href="./images/icons.svg#icon-phone-icon"></use>
             </svg>
             <input
-              class="fieldset-size"
+              class="fieldset__size"
               name="modal-box-name"
               id="fieldset-phone"
             />
           </fieldset>
 
           <fieldset class="fieldset">
-            <label class="fieldset-label" for="fieldset-email">Email</label>
-            <svg class="fieldset-icon">
+            <label class="fieldset__label" for="fieldset-email">Email</label>
+            <svg class="fieldset__icon">
               <use href="./images/icons.svg#icon-email-icon"></use>
             </svg>
             <input
-              class="fieldset-size"
+              class="fieldset__size"
               name="modal-box-name"
               id="fieldset-email"
             />
           </fieldset>
 
-          <fieldset class="fieldset-comment">
-            <label class="fieldset-label" for="fieldset-comment"
+          <fieldset class="fieldset__comment">
+            <label class="fieldset__label" for="fieldset-comment"
               >Komentarz</label
             >
             <textarea
-              class="fieldset-comment-size"
+              class="fieldset__comment--size"
               name="modal-box-comment"
-              id="fieldset-comment"
+              id="fieldset__comment"
               placeholder="Wprowadź tekst"
             ></textarea>
           </fieldset>
@@ -571,26 +571,26 @@
               <label for="fieldset-checkbox">
                 <input type="checkbox" id="fieldset-checkbox" />
                 <span class="checkbox">
-                  <svg class="checkbox-icon">
+                  <svg class="checkbox__icon">
                     <use
                       href="./images/icons.svg#icon-Vector-1"
                     ></use></svg></span
               ></label>
-              <p class="checkbox-text">
+              <p class="checkbox__text">
                 Oświadczam, iż akceptuję
-                <a class="checkbox-term" href="#">Regulamin</a> i
-                <a class="checkbox-term" href="#">Politykę Prywatności</a>
+                <a class="checkbox__term" href="#">Regulamin</a> i
+                <a class="checkbox__term" href="#">Politykę Prywatności</a>
               </p>
             </fieldset>
 
             <button class="submit-button" type="submit">
-              <span class="submit-button-push">Wyślij</span>
+              <span class="submit-button__push">Wyślij</span>
             </button>
           </div>
         </form>
 
-        <button type="button" class="modal-close-button" data-modal-close>
-          <svg class="modal-close-button-x" height="11" width="11">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg height="11" width="11">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>

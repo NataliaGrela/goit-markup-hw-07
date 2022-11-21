@@ -11,14 +11,14 @@
     cursor: pointer;
     margin-right: 8px;
 
-    & .checkbox-icon {
+    & .checkbox__icon {
       fill: white;
       background-color: transparent;
     }
 
   }
 
-  .checkbox-icon {
+  .checkbox__icon {
     width: 13px;
     height: 13px;
     fill: var(--brand-color);
@@ -28,12 +28,12 @@
     border-radius: 2px;
   }
   
-  input:checked + .checkbox .checkbox-icon {
+  input:checked + .checkbox .checkbox__icon {
     fill: white;
     background-color: var(--item-color);
   }
   
-  .checkbox-text {
+  .checkbox__text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -43,7 +43,7 @@
     color: var(--link-color);
   }
   
-  a.checkbox-term {
+  a.checkbox__term {
     color: var(--item-color);
     text-decoration: underline;
     cursor: pointer;
@@ -72,7 +72,7 @@
     }
   }
   
-  .submit-button-push {
+  .submit-button__push {
     display: flex;
     justify-content: center;
     margin: auto;

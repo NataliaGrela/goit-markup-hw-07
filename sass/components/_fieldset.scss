@@ -11,20 +11,20 @@
     border-radius: 4px;
     margin-bottom: 28px;
 
-    &:has(.fieldset-size:focus) {
+    &:has(.fieldset__size:focus) {
       border-color: var(--item-color);
       transition-duration: var(--transition-duration);
       transition-timing-function: var(--cubic-bezier);
     }
     
-    &:has(.fieldset-size:focus) .fieldset-icon {
+    &:has(.fieldset__size:focus) .fieldset__icon {
       fill: var(--item-color);
       transition-duration: var(--transition-duration);
       transition-timing-function: var(--cubic-bezier);
     }
   }
   
-  .fieldset-label {
+  .fieldset__label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -39,14 +39,14 @@
     left: -15px;
   }
   
-  .modal-form .fieldset-size {
+  .modal-form .fieldset__size {
     border: 0;
     background-color: transparent;
     width: 390px;
     outline: none;
   }
   
-  .fieldset-icon {
+  .fieldset__icon {
     width: 12px;
     height: 12px;
     fill: var(--brand-color);
@@ -55,7 +55,7 @@
     display: block;
   }
   
-  .fieldset-comment {
+  .fieldset__comment {
     display: flex;
     position: relative;
     padding-block: 0px;
@@ -68,14 +68,14 @@
     border-radius: 4px;
     margin-bottom: 20px;
 
-    &:has(.fieldset-comment-size:focus) {
+    &:has(.fieldset__comment--size:focus) {
       border-color: var(--item-color);
       transition-duration: var(--transition-duration);
       transition-timing-function: var(--cubic-bezier);
     }
   }
   
-  .fieldset-comment-size {
+  .fieldset__comment--size {
     width: 416px;
     height: 96px;
     border: 1px solid rgba(33, 33, 33, 0.2);

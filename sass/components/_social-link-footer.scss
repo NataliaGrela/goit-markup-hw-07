@@ -6,7 +6,7 @@
     margin-right: 40px;
   }
   
-  .social-title {
+  .social__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -22,7 +22,7 @@
     padding-bottom: 20px;
   }
   
-  .social-list-footer {
+  .social__list--footer {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -32,7 +32,7 @@
     margin-left: 32px;
   }
   
-  .social-icon-footer {
+  .social__icon--footer {
     width: 20px;
     height: 20px;
     fill: white;
@@ -45,7 +45,7 @@
     }
   }
   
-  .social-link-footer {
+  .social__link--footer {
     display: flex;
     align-items: center;
     justify-content: center;
